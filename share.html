@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+For Result
+</title>
+<link rel='stylesheet' href='css/woocommerce-layout.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)'/>
+<link rel='stylesheet' href='css/woocommerce.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='style.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400,500,700%7CRoboto:400,500,700%7CHerr+Von+Muellerhoff:400,500,700%7CQuattrocento+Sans:400,500,700' type='text/css' media='all'/>
+<link rel='stylesheet' href='css/easy-responsive-shortcodes.css' type='text/css' media='all'/>
+</head>
+<body class="home page page-template page-template-template-portfolio page-template-template-portfolio-php">
+<div id="page">
+	<div class="container">
+		<header id="masthead" class="site-header">
+		<div class="site-branding">
+			<h1 class="site-title"><a href="index.html" rel="home">
+
+TechKnow
+</a></h1>
+			<h2 class="site-description">
+
+do you Know about Tech
+</h2>
+		</div>
+		<nav id="site-navigation" class="main-navigation">
+		<button class="menu-toggle">Menu</button>
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+		<div class="menu-menu-1-container">
+			<ul id="menu-menu-1" class="menu">
+				<li><a href="index.php">Home</a></li>
+				<li><a href="about.php">About</a></li>
+
+				<li><a href="contact.php">Contact us</a></li>
+				<li><a href="privacy.php">Privacy Policy</a></li>
+				<li><a href="tnc.php">Terms & Conditions</a></li>
+
+			</ul>
+		</div>
+		</nav>
+		</header>
+
+
+
+<h4>
+Please. . . atleast 3 times
+</h4>
+
+<div class="container">
+
+<center>
+
+<a href="whatsapp://send?text= do You Know about Tech so show it in TechKnow, check your knowledge in our Quizz click here ....  https://www.productsin.store/q_app/q_app/html/" data-action="share/whatsapp/share">
+<button id="countButton" class = "btn btn-primary" class = "btn btn-default btn-lg btn-block" >
+share in whats app
+</button>
+</a>
+<br/>
+<hr/>
+<br/>
+<p id="displayCount"> </p>
+<br/>
+
+<hr/>
+<button id="resetButton" class = "btn btn-danger" class = "btn btn-default btn-lg btn-block">
+reset button
+</button>
+
+<button  id="nextpage" class = "btn btn-success" class = "btn btn-default btn-lg btn-block" target='self'>
+ Click to see your Result </button>
+</center>
+
+</div>
+
+
+<div class="container">
+
+<center>
+<p id='clickLink'> your <b>result</b> link will appear here </p>
+</center>
+</div>
+
+	<footer id="colophon" class="site-footer">
+	<div class="container">
+		<div class="site-info">
+			<h1 style="font-family: 'Herr Von Muellerhoff';color: #ccc;font-weight:300;text-align: center;margin-bottom:0;margin-top:0;line-height:1.4;font-size: 46px;">Quizz TechKnow</h1>
+			 <a target="blank" href="index.php">&copy; <?php echo date('Y'); ?> TechKnow by Digital HULK</a>
+		</div>
+	</div>	
+	</footer>
+	<a href="#top" class="smoothup" title="Back to top"><span class="genericon genericon-collapse"></span></a>
+</div>
+
+            
+
+<script>
+   var count = 0;
+   var countButton = document.getElementById("countButton");
+    var displayCount = document.getElementById("displayCount");
+   var nextPage = document.getElementById("nextpage");
+var clickLink=document.getElementById('clickLink');
+
+   countButton.onclick = function(){
+        count++;
+        displayCount.innerHTML = count +" times shared. . .";
+   }
+   resetButton.onclick = function(){
+        count = 0;
+       displayCount.innerHTML = count +" times shared. . .";
+  }
+nextpage.onclick=function(){
+
+if (count<3){
+window.alert(3-count +" times share in Whatsapp to enter into page..")
+
+
+}
+else {
+        clickLink.innerHTML = "<a href='result.php'> here is your result link </a>";
+
+}
+
+}
+
+
+</script>
+
+<!-- #page -->
+
+<script src='js/jquery.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/scripts.js'></script>
+<script src='js/masonry.pkgd.min.js'></script>
+
+</body>
+</html>
